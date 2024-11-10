@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoverDown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: rgb(143, 143, 231);
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    header ul{
+        list-style: none;
+        display: flex;
+        gap: 80px;
+        font-size: 30px;
+        
+    }
+    ul li{
+        position: relative;
+    }
+    header ul li:hover{
+        background-color: black;
+    }
+    header ul li ul{
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        background-color: rgb(31, 31, 102);
+        font-size: 20px;
+        display: none;
+    }
+    header ul li:hover .sumb-menu{
+        display: flex;
+    }
+
+ 
+    .sumb-menu li .inner-submenu{
+        position: absolute;
+        top: 0;
+        background-color: brown;
+        left: 100%;
+        display: none;
+    }
+    .sumb-menu li:hover .inner-submenu{
+        display: flex;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About US</a></li>
+            <li>
+                <a href="">Course</a>
+                <ul class="sumb-menu">
+                    <li><a href="">Physics</a></li>
+                    <li >
+                        <a href="">Chemistry</a>
+                        <ul class="inner-submenu">
+                            <li><a href="">Part1</a></li>
+                            <li><a href="">Part2</a></li>
+                            <li><a href="">Part3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Math</a></li>
+                    <li><a href="">English</a>
+                        <ul class="inner-submenu">
+                            <li><a href="">English 1</a></li>
+                            <li><a href="">English 1</a></li>
+                           
+                        </ul></li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fa-thin fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+    </header>
+</body>
+</html>

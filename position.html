@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+        <style>
+            .box{
+                border: 2px solid black;
+                position: relative;
+                height: 400px;
+                width: 100%;
+            }
+            .box1{
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                z-index: 2;
+            }
+            .box2{
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 20px;
+                z-index: 8;
+            }
+            .text{
+                text-align: center;
+                font-size: 30px;
+                background-color: pink;
+                width: 10%;
+                position: fixed;
+                right: 0px;
+                z-index: 100;
+            }
+            .head{
+                background-color: bisque;
+                height: 300px;
+                position: sticky;
+                top: 30px;
+            }
+            p{
+                background-color: brown;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="text">Hello</div>
+        </div>
+        <header class="head">
+            <h1>Look</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tenetur ab ipsum at ea voluptatibus sapiente! Ducimus modi facilis eveniet provident tempore cum, eaque dignissimos corrupti delectus. Ut, temporibus itaque!</p>
+    </body>
+</html>

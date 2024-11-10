@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+</head>
+
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;   
+    }
+
+    .wrapper *{
+        font-size: 20px;
+        text-align: center;
+        background-color: green;
+        padding: 70px;
+        font-weight: bolder;
+        border: 10px solid rgb(6, 44, 6);
+    }
+
+    header {
+        grid-column: span 3;    
+    }
+
+    .banner{
+        grid-column: span 2;
+    }
+    main{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    footer{
+        grid-column: span 3;
+    }
+
+</style>
+
+<body>
+
+<div class="wrapper">
+    
+    <header>Header</header>
+
+    <aside>Aside</aside>
+    <div class="banner">Banner</div>
+
+    <main>Main</main>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+
+    <footer>Footer</footer>
+
+</div>
+
+</body>
+
+</html>

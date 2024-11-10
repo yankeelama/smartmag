@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+    </head>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+            font-size: 60px;
+        }
+        .box{
+            background-color: aqua;
+            text-align: center;
+            border: 2px solid rgb(0, 132, 255);
+        }
+        .box:first-child{
+            grid-row: span 2;
+        }
+        .box:last-child{
+            grid-column: span 2;
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+            <div class="box">Box4</div>
+        </div>
+    </body>
+</html>
